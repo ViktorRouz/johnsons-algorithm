@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Johnson's algorithm for three machines</title>
+    <link rel="stylesheet" href="src/libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script defer src="src/libraries/jquery.min.js"></script>
+    <script defer src="src/libraries/bootstrap.min.js"></script>
+    <script defer src="src/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Johnson's algorithm for three machines</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <div class="input-data-forms">
+                <form class="count-rows-form" id="count-rows-form">
+                    <p>Для решения задачи необходимо задать количество деталей (строк):</p>
+                    <div class="row w-100 d-flex justify-content-center">
+                        <div class="form-group mb-0 w-25 mr-2">
+                            <input type="number" class="form-control" id="input-rows-count" placeholder="Enter count"
+                                   min="1" max="25" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary ml-2 pr-4 pl-4">Submit</button>
+                    </div>
+                </form>
+                <form class="details-form" id="details-form">
+                    <p>Время обработки на машине (станке):</p>
+                    <div class="details-form__machines-text">
+                        <p>на 1 (A)</p>
+                        <p>на 2 (B)</p>
+                        <p>на 3 (C)</p>
+                    </div>
+                    <div class="details-form__inputs" id="details-form__inputs">
+
+                    </div>
+                    <div class="details-form__buttons">
+                        <button type="submit" class="btn btn-danger ml-4 pr-4 pl-4" id="inputs-clear">Clear</button>
+                        <button type="submit" class="btn btn-primary ml-4 pr-4 pl-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="problem-solving d-flex flex-column align-items-start justify-content-start" id="problem-solving">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container h-100">
+            <div class="row h-100 d-flex justify-content-end align-items-center">
+                <p class="footer-text m-0">© Created by Viktor Belokhvostov, КТбо3-8</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
